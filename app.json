@@ -18,7 +18,10 @@
           "launchMode": "most-recent"
         }
       ],
-      "react-native-edge-to-edge"
+      "react-native-edge-to-edge",
+      "expo-build-properties",
+      "expo-font",
+      "react-native-vision-camera"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -32,14 +35,24 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.diegodark.fpno2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.diegodark.fpno2"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "863ed5f6-745c-4dfc-acf8-65fddabc6b82"
       }
     }
   }
